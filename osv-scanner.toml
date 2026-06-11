@@ -1,0 +1,27 @@
+[[IgnoredVulns]]
+id = "GHSA-v2v4-37r5-5v8g"
+reason = "ip-address: not bundled into dist; SOCKS proxy code path unreachable at action runtime (no SOCKS proxy in GitHub runners, no untrusted IPv6 input parsed)."
+
+[[IgnoredVulns]]
+id = "GHSA-34x7-hfp2-rc4v"
+reason = "tar 6.2.1: dev/native-only transitive dep via fsevents+node-gyp; not bundled and never executed at action runtime on Linux GitHub runners."
+
+[[IgnoredVulns]]
+id = "GHSA-83g3-92jg-28cx"
+reason = "tar 6.2.1: dev/native-only transitive dep via fsevents+node-gyp; not bundled and never executed at action runtime on Linux GitHub runners."
+
+[[IgnoredVulns]]
+id = "GHSA-8qq5-rm4j-mr97"
+reason = "tar 6.2.1: dev/native-only transitive dep via fsevents+node-gyp; not bundled and never executed at action runtime on Linux GitHub runners."
+
+[[IgnoredVulns]]
+id = "GHSA-9ppj-qmqm-q256"
+reason = "tar 6.2.1: dev/native-only transitive dep via fsevents+node-gyp; not bundled and never executed at action runtime on Linux GitHub runners."
+
+[[IgnoredVulns]]
+id = "GHSA-qffp-2rhf-9h96"
+reason = "tar 6.2.1: dev/native-only transitive dep via fsevents+node-gyp; not bundled and never executed at action runtime on Linux GitHub runners."
+
+[[IgnoredVulns]]
+id = "GHSA-r6q2-hw4h-h46w"
+reason = "tar 6.2.1: dev/native-only transitive dep via fsevents+node-gyp; not bundled and never executed at action runtime on Linux GitHub runners."
