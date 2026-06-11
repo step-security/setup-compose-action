@@ -36,11 +36,7 @@ async function validateSubscription(): Promise<void> {
   const body: Record<string, string> = {action: action || ''};
   if (serverUrl !== 'https://github.com') body.ghes_server = serverUrl;
   try {
-    await axios.post(
-      `https://agent.api.stepsecurity.io/v1/github/${process.env.GITHUB_REPOSITORY}/actions/maintained-actions-subscription`,
-      body,
-      {timeout: 3000}
-    );
+    await axios.post(`https://agent.api.stepsecurity.io/v1/github/${process.env.GITHUB_REPOSITORY}/actions/maintained-actions-subscription`, body, {timeout: 3000});
   } catch (error) {
     if (isAxiosError(error) && error.response?.status === 403) {
       core.error(`\u001b[1;31mThis action requires a StepSecurity subscription for private repositories.\u001b[0m`);
