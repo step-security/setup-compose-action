@@ -4,7 +4,7 @@
   "type": "module",
   "main": "src/main.ts",
   "scripts": {
-    "build": "esbuild src/main.ts --bundle --platform=node --target=node24 --format=cjs --outfile=dist/index.cjs --sourcemap --minify && yarn run license",
+    "build": "esbuild src/main.ts --bundle --platform=node --target=node24 --format=cjs --outfile=dist/index.cjs --sourcemap --minify --keep-names && yarn run license",
     "lint": "eslint --max-warnings=0 .",
     "format": "eslint --fix .",
     "test": "vitest run",
@@ -24,7 +24,7 @@
   "packageManager": "yarn@4.15.0",
   "dependencies": {
     "@actions/core": "^3.0.1",
-    "@docker/actions-toolkit": "^0.91.0",
+    "@docker/actions-toolkit": "^0.92.0",
     "axios": "^1.17.0"
   },
   "devDependencies": {
