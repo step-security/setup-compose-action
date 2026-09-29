@@ -1,3 +1,0 @@
-[[IgnoredVulns]]
-id = "GHSA-v2v4-37r5-5v8g"
-reason = "ip-address: not bundled into dist; SOCKS proxy code path unreachable at action runtime (no SOCKS proxy in GitHub runners, no untrusted IPv6 input parsed)."
