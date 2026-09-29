@@ -1,0 +1,13 @@
+{
+  "onboarding_type": "copied",
+  "is_archived": false,
+  "maintained_action_name": "step-security/setup-compose-action",
+  "upstream_full_action_name": "docker/setup-compose-action",
+  "action_type": "node",
+  "current_version": "v2.4.0",
+  "sync_config": {
+    "ignore_presets": [
+      "defaults_v1"
+    ]
+  }
+}
